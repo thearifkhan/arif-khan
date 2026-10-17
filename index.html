@@ -47,12 +47,38 @@
     "knowsAbout": ["Web Development", "Search Engine Optimization", "Digital Marketing"]
   }
   </script>
+  <style>
+    .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.nav-logo-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  display: inline;
+}
+  </style>
 </head>
 
 <body>
   <header class="header">
     <nav class="nav wrap" aria-label="Main navigation">
-      <a class="logo" href="#home" aria-label="Arif Khan home">Arif <span>Khan</span></a>
+      <!-- <a class="logo" href="#home" aria-label="Arif Khan home">Arif <span>Khan</span></a> -->
+      
+<a class="logo" href="#home" aria-label="Arif Khan home">
+  <img src="favicon.svg" alt="" class="nav-logo-icon">
+  <span class="logo-text">Arif <span>Khan</span></span>
+</a>
+
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"
         aria-controls="navMenu"><span></span><span></span><span></span></button>
       <div class="nav-menu" id="navMenu">
